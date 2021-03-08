@@ -1,0 +1,23 @@
+{
+  "name": "weather_app_tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdagray/weather_app_tut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitdagray/weather_app_tut/issues"
+  },
+  "homepage": "https://github.com/gitdagray/weather_app_tut#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
