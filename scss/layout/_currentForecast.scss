@@ -1,0 +1,131 @@
+.currentForecast {
+  .currentForecast__location {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+    @include mq(768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .currentForecast__conditions {
+    width: 100%;
+    font-size: 1.1rem;
+    margin: auto auto 2rem;
+    display: grid;
+    @include mq(375px) {
+      font-size: 1.3rem;
+    }
+    @include mq(400px) {
+      font-size: 1.7rem;
+    }
+
+    .temp {
+      @include flexCenter;
+      grid-row: 1 / span 3;
+      grid-column: 1 / span 2;
+      font-size: 6rem;
+      letter-spacing: 0;
+      text-shadow: 1px 0 5px $text-shadow-color;
+      position: relative;
+      @include mq(360px) {
+        font-size: 8rem;
+      }
+      @include mq(768px) {
+        font-size: 9rem;
+      }
+
+      .unit {
+        font-size: 1.65rem;
+        color: $fadecolor;
+        text-shadow: none;
+        position: absolute;
+        top: 55%;
+        left: 85%;
+        @include mq(768px) {
+          left: 75%;
+        }
+      }
+    }
+
+    .icon {
+      @include flexCenter;
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 2;
+
+      i {
+        font-size: 3rem;
+        text-shadow: 1px 0 5px $text-shadow-color;
+        @include mq(768px) {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .maxtemp {
+      @include flexCenter;
+      grid-row: 2 / span 1;
+      grid-column: 3 / span 2;
+    }
+
+    .mintemp {
+      @include flexCenter;
+      align-self: start;
+      grid-row: 3 / span 1;
+      grid-column: 3 / span 2;
+      color: $fadecolor;
+    }
+
+    .desc {
+      @include flexCenter;
+      grid-row: 4 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      @include mqMaxWMinH(1024px, 650px) {
+        margin-top: 1.5rem;
+      }
+      @include mqh(1080px) {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .feels {
+      @include flexCenter;
+      grid-row: 5 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+    }
+
+    .humidity {
+      display: none;
+      grid-row: 6 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+      color: $fadecolor;
+      @include mqMaxWMinH(1024px, 700px) {
+        @include flexCenter;
+      }
+      @include mqh(1080px) {
+        @include flexCenter;
+      }
+    }
+
+    .wind {
+      display: none;
+      grid-row: 7 / span 1;
+      grid-column: 1 / span 4;
+      padding-top: 0.5rem;
+      font-weight: normal;
+      color: $fadecolor;
+      @include mqMaxWMinH(1024px, 700px) {
+        @include flexCenter;
+      }
+      @include mqh(1080px) {
+        @include flexCenter;
+      }
+    }
+  }
+}

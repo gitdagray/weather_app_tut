@@ -1,0 +1,29 @@
+.dailyForecast {
+  .dailyForecast__title {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    @include mq(768px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .dailyForecast__contents {
+    flex-grow: 1;
+    @include flexCenter;
+    justify-content: space-evenly;
+    color: $font-color;
+    padding: 0.5rem 0;
+
+    .forecastDay {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 0.9rem;
+      @include mq(375px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

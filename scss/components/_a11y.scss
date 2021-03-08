@@ -1,0 +1,20 @@
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: $text-shadow-color;
+  padding: 14px;
+  z-index: 1;
+  color: $font-color;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  top: auto;
+  left: auto;
+}
