@@ -45,7 +45,7 @@ const getGeoWeather = (event) => {
       addSpinner(mapIcon);
     }
   }
-  if (!navigator.geolocation) geoError();
+  if (!navigator.geolocation) return geoError();
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 };
 
