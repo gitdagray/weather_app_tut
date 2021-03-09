@@ -50,7 +50,7 @@ const getGeoWeather = (event) => {
 };
 
 const geoError = (errObj) => {
-  const errMsg = errObj.message ? errObj.message : "Geolocation not supported";
+  const errMsg = errObj ? errObj.message : "Geolocation not supported";
   displayError(errMsg, errMsg);
 };
 
