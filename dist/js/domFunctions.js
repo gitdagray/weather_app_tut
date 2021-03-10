@@ -210,7 +210,7 @@ const createElem = (elemType, divClassName, divText, unit) => {
   }
   if (divClassName === "temp") {
     const unitDiv = document.createElement("div");
-    unitDiv.classList.add("unit");
+    unitDiv.className = "unit";
     unitDiv.textContent = unit;
     div.appendChild(unitDiv);
   }
